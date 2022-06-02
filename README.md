@@ -33,13 +33,19 @@ Inicie uma sessão de depuração no GDB:
 ```
 Este comando deve fornecer um prompt GDB, no qual você deve digitar run ou r:
 ```
- $ r
+ (gdb) r
 ```
-Seu programa irá travar, retornando um prompt, onde você pode digitar backtrace ou bt para obter um rastreamento de pilha (stack trace).
+Seu programa irá travar, retornando um prompt. GDB pode indicar que uma falha de segmentação ocorre na linha 90 de matrix_multiply.c. 
+você pode digitar backtrace ou bt para obter um rastreamento de pilha (stack trace).
+```
+ $ bt
+```
+Lem disso, cocê pode pedir ao GDB para imprimir valores usando print ou p:
+```
+ (gdb) p B->values[k][j]
+```
 
-
-
-
+Para sair, digite quit. 
 
 
 
